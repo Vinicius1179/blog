@@ -11,6 +11,7 @@
     --header:  #1c2833;
     --main-white: #b3b6b7;
     --text-color: white;
+    --footer:  #1c2833; 
 }
 
 header > ul {
@@ -22,17 +23,15 @@ header > ul {
     position: fixed;
     align-items: center;
     color: white;
-    
-    
+    list-style-type: none;
 }
 
 body {
-    background-color: blueviolet;
-    height: 500vh;
-    background-color: var(--main-white);
-    font-size: 1rem;
-    
-
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 
@@ -113,6 +112,7 @@ summary {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    color: black;
     /* border: 2px solid red; */ 
     
 }
@@ -122,6 +122,7 @@ summary {
     width: 30%;
     /* border: 2px solid green; */
     text-align: center;
+    color: black;
 }
 
 /* a::before {
@@ -134,13 +135,21 @@ p {
 
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 
 a:hover {
     text-decoration: underline;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+a:focus {
+    outline: 2px solid #007BFF;
 }
 
 .content > h1 {
@@ -151,4 +160,21 @@ a:hover {
     background-color: var(--main-blue);
     color: var(--text-color);
     margin-top: 10%;
+}
+footer {
+    background-color: #1c2833;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+.social a {
+    color: white;
+    text-decoration: none;
+}
+.social a:hover {
+    text-decoration: underline;
+}
+a {
+    transition: color 0.3s;
 }
